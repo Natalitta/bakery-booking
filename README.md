@@ -31,34 +31,34 @@ This epic includes all main fetures of the site.
 
 Stories:
 * As an owner, I would like a have a home page so that customers can view information about my cafe.
-* As an owner, I would like a have a menu page so that customers can view the menu and choose what they like.
+* As an owner, I would like a have a menu page so that customers can view the menu and choose what they'd like to order.
 * As an owner, I would like a have a booking page so that customers can order any menu items.
   
-EPIC 3 - Authentication Epic
+### EPIC 3 - Authentication Epic
 
-The authentication epic is for all stories related to the registration, login and authorization of views. This epic provides critical functionality and value as without it the staff would not be able to managed the bookings securely without regular site visitors also being able to see and perform actions.
-
-Stories:
-As a developer, I need to implement allauth so that users can sign up and have access to the websites features
-
-As a Site Owner, I want users to verify their email when registering an account so that I can ensure that a valid email address is being used.
-
-As a site owner, I would like the allauth pages customized to that they fit in with the sites styling
-
-EPIC 4 - Menu
-
-The menu epic is for all stories that relate to the creating, deleting, editing and viewing of menus. This allows for regular users to view menus and for staff to manage them with a simple UI interface.
+The authentication epic includes all stories related to the registration and login of users. This epic is crucial to managed the bookings securely without regular site visitors also being able to see and perform actions.
 
 Stories:
-As a staff user, I want to be able to create a new menu when we have new dishes to offer
+* As a developer, I need to implement allauth so that users can sign up and have access to the websites features.
 
-As a user, I would like to be able to view menus so that I can decide if I would like to dine at the restaurant
+* As an owner, I'd like users to verify their email when registering so that I can ensure that the email address is valid.
 
-As a staff user, I want to be able to edit a menu when updates are needed
+* As an owner, I would like the allauth pages customized to that they fit in with the sites styling.
 
-As a staff member, I would like to receive feedback when I create or update menus so that I can see they have worked
+### EPIC 4 - Menu
 
-As a staff user, I want to be able to delete a menu when it is no longer used
+The menu epic includes all stories that relate to creating, deleting, editing and viewing of menu items. This allows viewing the menu for customers and for staff to manage them.
+
+Stories:
+* As a staff, I want to be able to create a new menu when we have new offers.
+
+* As a user, I would like to be able to view menus so that I can decide if I would like to go there.
+
+* As a staff, I want to be able to edit the menu.
+
+* As a staff, I would like to receive feedback when I create or update menus so that I can see they have worked.
+
+* As a staff, I want to be able to delete a menu when it is no longer used.
 
 EPIC 5 - Booking
 
