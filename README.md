@@ -1,108 +1,88 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Lazy Cat Cafe 
+Lazy Cat Cafe is a cafe located in Cahersiveen, Ireland. The app is a cafe management system aimed at allowing staff to easily manage the menu and bookings. Customers can view the menu and also order a cake for a special ocasion with the help of a simple, easy to use booking system, they can also manage or cancel their reservations. The live link is here:
 
-Welcome Natalitta,
+# User-Experience-Design
+## Site-Goals
+The site is designed for staff to easily manage the menu and keep track of upcoming bookings.
+Also the site provides customers with an opportunity to order what they want and for a date they want in a simple way. Moreover, they can update or cancel their bookings.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Agile Planning
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+This project was developed using Agile. All features were assigned to epics and user stories with the labels, Must have, should have, could have. "Must have" user stories were completed first, then "should haves" and finally "could have" ones, so that the site can start functioning as soon as possible.
+The Kanban board was created in GitHub projects.
 
-## Gitpod Reminders
+## Epics:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The project had 6 main Epics (Milestones):
 
-`python3 -m http.server`
+### EPIC 1: Basic Setup
 
-A blue button should appear to click: _Make Public_,
+The basic setup epic includes all stories for the basic application setup, the crucial one. 
 
-Another blue button should appear to click: _Open Browser_.
+Stories:
+* As a developer, I need to create the base.html page template so that other pages can use it too.
+* As a developer, I need to create static resources so that images, css and javascript work on the website.
+* As a developer, I need to create the navbar so that users can easily navigate the website.
+* As a developer, I need to create the footer so that users can get social media links and contact information.
+* As a developer, I need to set up the project so that it is ready for implementing the core features.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### EPIC 2: Main Features
+This epic includes all main fetures of the site.
 
-A blue button should appear to click: _Make Public_,
+Stories:
+* As an owner, I would like a have a home page so that customers can view information about my cafe.
+* As an owner, I would like a have a menu page so that customers can view the menu and choose what they like.
+* As an owner, I would like a have a booking page so that customers can order any menu items.
+  
+EPIC 3 - Authentication Epic
 
-Another blue button should appear to click: _Open Browser_.
+The authentication epic is for all stories related to the registration, login and authorization of views. This epic provides critical functionality and value as without it the staff would not be able to managed the bookings securely without regular site visitors also being able to see and perform actions.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Stories:
+As a developer, I need to implement allauth so that users can sign up and have access to the websites features
 
-To log into the Heroku toolbelt CLI:
+As a Site Owner, I want users to verify their email when registering an account so that I can ensure that a valid email address is being used.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+As a site owner, I would like the allauth pages customized to that they fit in with the sites styling
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+EPIC 4 - Menu
 
-------
+The menu epic is for all stories that relate to the creating, deleting, editing and viewing of menus. This allows for regular users to view menus and for staff to manage them with a simple UI interface.
 
-## Release History
+Stories:
+As a staff user, I want to be able to create a new menu when we have new dishes to offer
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+As a user, I would like to be able to view menus so that I can decide if I would like to dine at the restaurant
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+As a staff user, I want to be able to edit a menu when updates are needed
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+As a staff member, I would like to receive feedback when I create or update menus so that I can see they have worked
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+As a staff user, I want to be able to delete a menu when it is no longer used
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+EPIC 5 - Booking
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+The booking epic is for all stories that relate to creating, viewing, updating and deleting bookings. This allows the staff to easily view upcoming bookings, manage the bookings and also for customers to book and manage their own reservations.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+Stories:
+As a user, I would like to be able to create a new booking when I want to visit the restaurant
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+As a user, I would like to view my bookings when I need to check the information
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+As a user, I would like to be able to edit a booking so that I can make changes when needed
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+As a user, I would like to receive feedback when I create a booking or edit one so I know it was completed successfully
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+As a staff user, I want to be able to search a booking by reference to save time searching
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+As a user I would like to delete a booking when I no longer require it
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### EPIC 6 - Deployment 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+This epic includes all stories related to deploying the app to heroku and documentation necessary for the software development lifecycle of the application.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Stories and tasks:
 
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+* As a developer, I must deploy the project to heroku so that customers can use it.
+* Complete readme documentation.
+* Complete testing documentation.
